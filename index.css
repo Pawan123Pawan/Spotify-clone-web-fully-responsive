@@ -1,0 +1,365 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --black:#000;
+    --gray:#121212;
+    --light-gray:#1D1D1D;
+    --color:#ffff;
+    --my-para:#787878;
+    --card-hover:#202020;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--black);
+    height: 94%;
+
+}
+.Container{
+    background: #000;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: .5rem;
+}
+.left-div{
+    flex: 0.25;
+    /* background: orange; */
+    margin-right: .5rem;
+    border-radius: .5rem;
+}
+.home{
+    height: 20%;
+    cursor: pointer;
+    background: var(--gray);
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+}
+.home>div>div{
+    margin-left: 1.5rem;
+    font-family: poppins;
+    color: var(--color);
+    font-weight: 500;
+
+}
+.playlist{
+    height: 78.5%;
+    background: var(--gray);
+    border-radius: .5rem;
+    overflow-y: scroll;
+    padding-left: 1rem;
+}
+.playlist-top:hover{
+    cursor: pointer;
+}
+.library{
+    color: var(--color);
+    font-size: 15px;
+    font-weight: bold;
+}
+.playlist-plus>div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--color);
+}
+.playlist-plus>div:hover{
+    border-radius: 50%;
+    background: var(--card-hover);
+    opacity: .5;
+}
+.search-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--color);
+}
+.search-button:hover{
+    cursor: pointer;
+    background: var(--card-hover);
+}
+.my-playlist{
+    padding: 8px;
+    width:97%;
+    border-radius: .5rem;
+}
+.my-playlist:hover{
+    cursor: pointer;
+    background: var(--light-gray);
+    color: var(--color);
+}
+.playlist-button{
+    border-radius: 1rem;
+    background: var(--light-gray);
+    width: 100px;
+    color: var(--color);
+}
+.playlist-button:hover{
+    cursor: pointer;
+    background: var(--card-hover);
+}
+
+
+.right-div{
+    flex: 0.8;
+    background: var(--gray);
+    border-radius: .5rem;
+    overflow-y: scroll;
+}
+nav{
+   background: var(--gray);
+    padding: 1rem 0;
+    opacity: .8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.my-button>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-inline: 6px;
+}
+.my-button>div>img{
+    color: var(--color);
+    padding: .5rem;
+    width: 35px;
+    height: 35px;
+}
+.right-button>div{
+    margin:0 6px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.right-button>div>button{
+    padding: 6px 14px;
+    border: none;
+    border-radius: 1rem;
+}
+.download-icon{
+    background: var(--black);
+    color: var(--color);
+    padding-left: 8px;
+}
+.download-icon>img{
+    /* margin-left: 3px; */
+}
+.explore{
+    background: var(--color);
+    color: var(--light-gray);
+    font-family: poppins;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.app{
+    background: var(--black);
+    color: var(--color);
+    font-family: poppins;
+    font-weight: 600;
+    font-size: .9rem;
+    padding-left: 0px !important;
+}
+.my-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 50% !important;
+    opacity: 0.7;
+    padding:0 .7rem;
+    color: var(--color);
+}
+
+.my-card>h5{
+    color:var(--color)
+}
+.heading{
+    color: var(--color);
+    font-family: poppins;
+    font-size: 26px;
+    font-weight: 900;
+    
+}
+
+.my-para{
+    color: var(--my-para);
+}
+.dflex{
+    position: absolute !important;
+    bottom: 29%;
+    left: 42%;
+}
+.play-button:hover{
+    
+    background: var(--card-hover) !important;;
+}
+.play-button1{
+    display: none !important;
+}
+.play-button:hover .play-button1{
+    display: inline-block !important;
+    cursor: pointer;
+}
+.player{
+    padding-left: 0;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    bottom:0;
+}
+.left{
+    background:var();
+    flex: 25%;
+    cursor: pointer;
+}
+.title-left{
+    color: var(--color);
+}
+.title-para{
+    color: var(--my-para);
+    font-size: 13px;
+}
+.headphone{
+    color: var(--color);
+
+}
+.headphone:hover{
+    color: rgb(199, 180, 180);
+}
+.favourite{
+    color: var(--color);
+}
+.favourite:hover{
+    color: rgb(199, 180, 180);
+}
+.right{
+    flex: 25%;
+    justify-content:flex-end;
+}
+.center{
+    /* background: yellow; */
+    flex: 50%;
+}
+.player-timeline{
+    width: 40vw;
+}
+.player-timeline>span{
+    color: var(--color);
+}
+.player-timeline>input{
+    width: 80%;
+    height: 2px;
+}
+.player-timeline>input:hover {
+    background: green;
+}
+.timeline-slider:focus,
+.volume-slider:focus {
+  outline: none;
+}
+.volume-slider{
+    height: 2px;
+}
+::-webkit-scrollbar{
+    display: none;
+} 
+@media screen and (max-width: 710px) {
+    #left{
+        display: none !important;
+    }
+    .my-nav{
+        flex-wrap: wrap-reverse;
+    }
+    .my-button{
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    #left{
+        display: none !important;
+    }
+    .right-button{
+        flex-wrap: wrap-reverse;
+    }
+    .right-button>div{
+        margin: 0 0 20px 1.5rem !important;
+    }
+    .my-user{
+        padding: .7rem ;
+    }
+}
+@media screen and (max-width: 480px) {
+    #nav-user-hide{
+        display: none !important;
+    }
+    #user-hide-open{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 470px) {
+    .left-div{
+        display: none;
+    }
+    .Container{
+        justify-content: center !important;
+    }
+    .right-div{
+        flex: 1 !important;
+    }
+    #user-hide-open{
+        display: none !important;
+    }
+    #home{
+        display: block !important;
+    }
+    #my-nav{
+        flex-direction: column-reverse !important;
+        align-items: normal !important;
+    }
+    .home{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .home>div{
+        margin-bottom: 14px  !important;
+    }
+    .my-button{
+        padding: 0px !important;
+    }
+    #right{
+        display: none !important;
+    }
+    .player-timeline{
+        width: 80vw !important;
+    }
+    #right1{
+        flex-direction: column !important;
+        margin-inline:10px ;
+    }
+    #right1:hover #valume{
+        display: block !important;
+        z-index: 1;
+    }
+    #home1{
+        padding: 0 2rem !important;
+    }
+}
+@media screen and (min-width: 470px) {
+    #right1{
+        display: none !important;
+    }
+}
+  
